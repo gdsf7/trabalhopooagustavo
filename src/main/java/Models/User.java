@@ -29,10 +29,4 @@ public class User {
     private int matricula;
     @Column(nullable = false)
     private int funcao;
-
-
-
-
-
-
 }
