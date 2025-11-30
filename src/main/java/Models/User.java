@@ -20,7 +20,7 @@ public class User {
     @Column(nullable = false)
     private String sobrenome;
     @Column(nullable = false)
-    private String senha;
+    private String password;
     @Column(nullable = false, unique = true)
     private String email;
     @Column(unique = true)
@@ -28,5 +28,5 @@ public class User {
     @Column(nullable = false, unique = true)
     private int matricula;
     @Column(nullable = false)
-    private int funcao;
+    private int role;
 }
