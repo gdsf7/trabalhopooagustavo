@@ -33,6 +33,6 @@ import java.util.List;
         @CrossOrigin("http://localhost:4200")
         @DeleteMapping("/{id}")
         public void deletarEntidade(@RequestParam Long id) {
-            model.delete(id);
+            service.delete(id);
         }
 }

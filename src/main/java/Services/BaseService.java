@@ -28,4 +28,7 @@ public abstract class BaseService<E, Repository extends JpaRepository<E, Long>>{
         repository.save(entity);
     }
 
+    // so para o controller parar de reclamar
+    public void save(E entity){}
+
 }
