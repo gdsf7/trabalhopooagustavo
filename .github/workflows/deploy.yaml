@@ -28,7 +28,7 @@ jobs:
     runs-on: self-hosted
     needs: construir
     steps:
-      - name: pegar a imagem
+      - name: pegar a imagemm
         run: sudo docker pull gdsferreira/trabalhopooagustavo
       - name: baixar o docker compose
         uses: actions/checkout@v4
