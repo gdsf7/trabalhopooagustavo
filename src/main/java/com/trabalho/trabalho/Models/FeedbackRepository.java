@@ -1,4 +1,4 @@
-package Models;
+package com.trabalho.trabalho.Models;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

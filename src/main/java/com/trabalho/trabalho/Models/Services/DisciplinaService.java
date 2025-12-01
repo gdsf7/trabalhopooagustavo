@@ -1,7 +1,7 @@
-package Models.Services;
+package com.trabalho.trabalho.Models.Services;
 
-import Models.Disciplina;
-import Models.DisciplinaRepository;
+import com.trabalho.trabalho.Models.Disciplina;
+import com.trabalho.trabalho.Models.DisciplinaRepository;
 import org.springframework.stereotype.Service;
 
 @Service

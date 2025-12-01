@@ -1,7 +1,7 @@
-package Models.Services;
+package com.trabalho.trabalho.Models.Services;
 
-import Models.Material;
-import Models.MaterialRepository;
+import com.trabalho.trabalho.Models.Material;
+import com.trabalho.trabalho.Models.MaterialRepository;
 import org.springframework.stereotype.Service;
 
 @Service

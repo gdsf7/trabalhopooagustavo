@@ -1,7 +1,7 @@
-package Models.Services;
+package com.trabalho.trabalho.Models.Services;
 
-import Models.Historico;
-import Models.HistoricoRepository;
+import com.trabalho.trabalho.Models.Historico;
+import com.trabalho.trabalho.Models.HistoricoRepository;
 import org.springframework.stereotype.Service;
 
 @Service

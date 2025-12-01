@@ -1,7 +1,7 @@
-package Models.Services;
+package com.trabalho.trabalho.Models.Services;
 
-import Models.Feedback;
-import Models.FeedbackRepository;
+import com.trabalho.trabalho.Models.Feedback;
+import com.trabalho.trabalho.Models.FeedbackRepository;
 import org.springframework.stereotype.Service;
 
 @Service

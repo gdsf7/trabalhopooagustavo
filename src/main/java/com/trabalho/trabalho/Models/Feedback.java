@@ -1,4 +1,4 @@
-package Models;
+package com.trabalho.trabalho.Models;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,13 +9,16 @@ import lombok.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Historico {
+public class Feedback {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(nullable = false)
-    private String descricao;
+    private String texto;
+
+    @Column
+    private String anexo;
 
     @ManyToOne
     @JoinColumn(name = "idAluno", nullable = false)
@@ -24,4 +27,14 @@ public class Historico {
     @ManyToOne
     @JoinColumn(name = "idProfessor", nullable = false)
     private User professor;
+
+    @Column
+    private String resp_familia;
+
+    // depois eu ponho a data
+
+    @ManyToOne
+    @JoinColumn(name = "idGuardiao", nullable = false)
+    private User guardiao;
+
 }

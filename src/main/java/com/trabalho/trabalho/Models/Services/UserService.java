@@ -1,7 +1,7 @@
-package Models.Services;
+package com.trabalho.trabalho.Models.Services;
 
-import Models.User;
-import Models.UserRepository;
+import com.trabalho.trabalho.Models.User;
+import com.trabalho.trabalho.Models.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service
