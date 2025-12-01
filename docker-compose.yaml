@@ -1,6 +1,6 @@
 services:
   trabalho_api:
-    image: trabalhopooagustavo
+    image: gdsferreira/trabalhopooagustavo
     ports:
       - "80:8080"
     environment:
@@ -12,7 +12,7 @@ services:
     networks:
       - trabalhopooagustavonet
 
-  servico_banco:
+  banco:
     image: postgres:17.2
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -21,7 +21,7 @@ services:
     volumes:
       - pgdata:/home/ubuntu/dados
     networks:
-      - trabalhopooagustavobnet
+      - trabalhopooagustavonet
 
 networks:
   trabalhopooagustavonet:
