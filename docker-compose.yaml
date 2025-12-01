@@ -21,7 +21,7 @@ services:
     volumes:
       - pgdata:/home/ubuntu/dados
     networks:
-      - trabalhopooagustavobnet
+      - trabalhopooagustavonet
 
 networks:
   trabalhopooagustavonet:
