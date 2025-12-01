@@ -12,10 +12,6 @@ public abstract class BaseService<E, Repository extends JpaRepository<E, Long>>{
         this.repository = repository;
     }
 
-    public E find(Long id){
-        return repository.findById(id).get();
-    };
-
     public List<E> all(){
         return this.repository.findAll();
     }

@@ -1,10 +1,7 @@
 package com.trabalho.trabalho.Controllers;
 
 import com.trabalho.trabalho.Models.Services.UserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.trabalho.trabalho.Models.User;
 import java.util.List;
 
@@ -13,6 +10,11 @@ import java.util.List;
 public class UserController extends Controller<User, UserService> {
     public UserController(UserService user) {
         super(user);
+    }
+
+    @PostMapping("criar-usuario")
+    public void criarUsuario(@RequestBody User user) {
+        this.service.create(user);
     }
 
     @GetMapping("buscar-usuario-nome/{nome}")
