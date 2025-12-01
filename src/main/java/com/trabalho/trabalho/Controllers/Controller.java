@@ -1,6 +1,6 @@
 package com.trabalho.trabalho.Controllers;
 
-import Services.BaseService;
+import Models.Services.BaseService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package Services;
+package Models.Services;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

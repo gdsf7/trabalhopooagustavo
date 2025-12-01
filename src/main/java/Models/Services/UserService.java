@@ -1,4 +1,4 @@
-package Services;
+package Models.Services;
 
 import Models.User;
 import Models.UserRepository;
