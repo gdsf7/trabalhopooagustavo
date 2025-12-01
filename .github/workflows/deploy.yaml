@@ -28,6 +28,7 @@ jobs:
     runs-on: self-hosted
     needs: construir
     steps:
+      - run: sudo docker login -u gdsferreira -p '${{ secrets.DOCKER_PASS }}'
       - name: pegar a imagemm
         run: sudo docker pull gdsferreira/trabalhopooagustavo
       - name: baixar o docker compose
