@@ -12,7 +12,7 @@ services:
     networks:
       - trabalhopooagustavonet
 
-  servico_banco:
+  banco:
     image: postgres:17.2
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
