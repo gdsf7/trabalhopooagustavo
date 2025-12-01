@@ -12,25 +12,21 @@ import java.util.List;
             this.service = service;
         }
 
-        @CrossOrigin("http://localhost:4200")
         @GetMapping()
         public List<E> listarEntidades() {
             return service.all();
         }
 
-        @CrossOrigin("http://localhost:4200")
         @PostMapping
-        public void cadastrarNovaEntidade(@RequestBody E entidade) {
+        public void cadastrarEntidade(@RequestBody E entidade) {
             service.create(entidade);
         }
 
-        @CrossOrigin("http://localhost:4200")
         @PutMapping
         public void atualizarEntidade(@RequestBody E entidade) {
             service.save(entidade);
         }
 
-        @CrossOrigin("http://localhost:4200")
         @DeleteMapping("/{id}")
         public void deletarEntidade(@RequestParam Long id) {
             service.delete(id);
